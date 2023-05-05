@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Encriptador </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fondo"> 
+        
+
+        <div class="texto1">
+            <img class="libro" src="https://img.icons8.com/pastel-glyph/64/0A016F/code-file-1--v2.png"/>
+
+            <textarea id="ingresar" class="ingresar" placeholder="Ingresar texto aqui..."></textarea>
+
+            <div class="info">
+                <img class="icono" src="https://img.icons8.com/ios/50/null/info--v1.png"/>
+                <p class="texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <input name="encriptar" class="encriptar" type="submit" value="Encriptar" onclick="encriptar()">
+                <input name="desencriptar" class="desencriptar" type="submit" value="Desencriptar" onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="posicion">
+            <div class="texto2">
+                <p id="mensaje" class="mensaje"></p>
+                <input type="submit" id="copiar" value="Copiar" onclick="copiar()">
+                <img id="imagen-espacio2" class="imagen-muestra" src="img/imagen.svg">
+                <p id="aviso1" class="aviso1">Ningún mensaje fue encontrado</p>
+                <p id="aviso2" class="aviso2">Ingresar el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

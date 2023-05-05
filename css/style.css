@@ -1,0 +1,274 @@
+:root{
+    --dark-bg: #6c788e;
+    --texto-ig: #2a2344;
+    --main-bg: #a6aec1;
+    --primario-1: #cfd5e1;
+    --secundario-1: #ededf2;
+    --light-bg: #fcfdff;
+
+}
+
+html{
+    font-size: 16px;
+}
+
+.fondo{
+    display: flex;
+    background-color: var(--main-bg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fondo .libro{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 15px 0 0 10px;
+}
+
+.texto1{
+    /* background-color: aquamarine; */
+    width: 60%;
+    height: 100%;    
+}
+
+.ingresar{
+    content: "Ingresar texto aqui...";
+    background-color: var(--main-bg);
+    border: none;
+    margin: 0 2rem 0 4rem;
+    color: var(--texto-ig);
+    font-size: 1.8rem;
+    outline: 0;
+    width: 80%;
+    height: 70%;
+}
+
+.ingresar::placeholder{
+    color: var(--texto-ig);
+}
+
+.posicion{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto2{
+    border-radius: 32px;
+    background-color: var(--primario-1);
+    width: 95%;
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px 5px 5px var(--dark-bg);
+}
+
+.texto2 .imagen-muestra{
+    width: 60%;
+}
+
+.texto2 .aviso1{
+
+    font-weight: 1000;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.texto2 .aviso2{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.texto2 .mensaje{
+    display: none;
+    background-color: var(--primario-1);
+    width: 90%;
+    height: 80%;
+    font-size: 1.1rem;
+}
+
+.texto2 #copiar{
+    display: none;
+    background-color: var(--main-bg);
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 5px;
+    width: 6rem;
+    border: 2px solid var(--texto-ig);
+    margin: 20px 0 10px 0;
+    color: var(--light-bg);
+}
+
+.texto2 #copiar:hover{
+    background-color: var(--texto-ig);
+    color: var(--secundario-1);
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+.info .icono{
+    height: 1.5rem;
+    margin-right: 10px;
+}
+
+.info .texto{
+    font-size: 1.1rem;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones input{
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 10px;
+    width: 14rem;
+    border: 2px solid var(--texto-ig);
+    color: var(--light-bg);
+}
+
+.botones input:hover{
+    background-color: var(--light-bg);
+    color: var(--texto-ig);
+}
+
+.botones .encriptar{
+    background-color: #3e4b51;
+
+}
+
+.botones .desencriptar{
+    background-color: #635063;
+}
+
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+    .fondo{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+
+    }
+    .botones input{
+        max-width: 15rem;
+        width: 40%;
+    }
+
+    .posicion{
+        margin-top: 5px;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 25px;
+
+    }
+    .texto2 .aviso1{
+        margin-top: 20px;
+    }
+
+    .texto2 .aviso2{
+        margin-bottom: 20px;
+    }
+
+    .texto2 .imagen-muestra{
+        display: none;
+    }
+
+    .texto2 .mensaje{
+        display: none;
+        background-color: var(--primario-1);
+        width: 90%;
+        height: 60%;
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+
+    
+    
+}
+
+
+@media only screen and (max-width: 375px){
+    html{
+        font-size: 15px;
+    }
+
+    .fondo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .texto1{
+        width: 100%;
+        height: 80%;
+    }
+
+    .ingresar{
+        width: 90%;
+        height: 55%;
+        margin: 0 15px;
+    }
+
+    .botones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones input{
+        width: 88%;
+        margin: 5px 0;
+    }
+
+
+    .posicion{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .texto2 .aviso1{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .texto2 .aviso2{
+        margin: 10px 10px;
+    }
+
+    .texto2 .imagen-muestra{
+        display: none;
+    }
+
+    .texto2 .mensaje{
+        display: none;
+        background-color: var(--primario-1);
+        width: 90%;
+        height: 60%;
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+
+}
